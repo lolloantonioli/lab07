@@ -10,8 +10,8 @@ public class TestIterablePlain {
 
     private TestIterablePlain() {}
 
-    private static <T> IterableWithPolicy<T> getIterableWithPolicy(T[] elements) {
-        return null; // TODO: return the implementation of IterableWithPolicy
+    private static <T> IterableWithPolicy<T> getIterableWithPolicy(final T[] elements) {
+        return new ImplIterableWithPolicy<>(elements); // TODO: return the implementation of IterableWithPolicy
     }
 
     public static void main(final String[] args) {
