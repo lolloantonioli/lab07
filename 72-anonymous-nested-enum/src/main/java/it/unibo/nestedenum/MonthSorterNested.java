@@ -91,12 +91,12 @@ public final class MonthSorterNested implements MonthSorter {
         }
         
     }
-
+    
     /**
      * Comparator static nested class which sort months by the order in the calendar.
      */
     public static class SortByMonthOrder implements Comparator<String> {
-
+        
         @Override
         public int compare(String o1, String o2) {
             return Month.fromString(o1).compareTo(Month.fromString(o2));
